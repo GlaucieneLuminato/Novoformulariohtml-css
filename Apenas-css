@@ -1,81 +1,54 @@
-html {
-  background: url(fundoformulario.jpg) no-repeat;
-  background-size: cover;
-  height: 100%;
+:root {
+  --text-color: #000;
+  --blue: #3498db;
+  --white:  #fbfbfb;
 }
-
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+}
 body {
-  text-align: center;
-}
-
-.form-main {
+  height: 100vh;
   width: 100%;
-  float: left;
-  padding-top: 0px;
+  background: center / cover no-repeat url("img.png");
+  padding: 0.5rem;
 }
-
-.contact-h2 {
-  font-family: helvetica, arial, sans-serif;
+[df] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 .form-div {
-  width: 500px;
-  text-align: justify;
-  background-color: rgba(72, 72, 72, 0.4);
-  float: left;
-  left: 50%;
-  position: absolute;
-  margin-left: -280px;
-  margin-top: 500px;
-  padding: 35px 35px 50px 35px;
+  width: 100%;
+  max-width: 450px;;
+  background-color: rgba (72, 72, 72, 0.4);
 }
-
-.contact-form 
-  input[type=text],
-  .contact-form input[type=email],
-  .mensagem {
-    color: #3c3c3c;
-    padding: 30px 30px 30px 30px;
-    margin-bottom: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
+.form {
+  gap: 10px;
+  padding: 30px;
+  width: 100%;
+  border-radius: 20px;
+}
+.input {
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  color: var(--black);
+}
+.btn {
+   width: 100%;
+   border: 2px solid var(--white);
+   cursor: pointer;
+   padding: 0.6rem 0.4rem;
+   border-radius: 10px;
+   background-color: var(--blue);
+   font-size: 24px;
   }
-
-  .button-blue {
-    width: 100%;
-    float: left;
-    border: #fbfbfb solid 4px;
-    cursor: pointer;
-    background-color: #3498db;
-    color: #fbfbfb;
-    font-size: 24px;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    margin-top: -4px;
-    font-weight: 700;
-
-  }
-
-  .button-blue:hover {
+  .btn blue:hover {
     background-color: #fbfbfb;
     color: #0493bd;
   }
-
-@media only screen and (max-width:600px) {
-  .form-div {
-    left: 3%;
-    margin-right: 3%;
-    width: 100%;
-    margin-left: 0;
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-}
