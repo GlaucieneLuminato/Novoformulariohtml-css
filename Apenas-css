@@ -1,0 +1,81 @@
+html {
+  background: url(fundoformulario.jpg) no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+  text-align: center;
+}
+
+.form-main {
+  width: 100%;
+  float: left;
+  padding-top: 0px;
+}
+
+.contact-h2 {
+  font-family: helvetica, arial, sans-serif;
+}
+
+.form-div {
+  width: 500px;
+  text-align: justify;
+  background-color: rgba(72, 72, 72, 0.4);
+  float: left;
+  left: 50%;
+  position: absolute;
+  margin-left: -280px;
+  margin-top: 500px;
+  padding: 35px 35px 50px 35px;
+}
+
+.contact-form 
+  input[type=text],
+  .contact-form input[type=email],
+  .mensagem {
+    color: #3c3c3c;
+    padding: 30px 30px 30px 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+  }
+
+  .button-blue {
+    width: 100%;
+    float: left;
+    border: #fbfbfb solid 4px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fbfbfb;
+    font-size: 24px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+
+  }
+
+  .button-blue:hover {
+    background-color: #fbfbfb;
+    color: #0493bd;
+  }
+
+@media only screen and (max-width:600px) {
+  .form-div {
+    left: 3%;
+    margin-right: 3%;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
