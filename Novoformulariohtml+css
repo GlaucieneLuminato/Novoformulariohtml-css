@@ -1,38 +1,20 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  
-  <title>replit</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Formulário de Contato</title>
+
 </head>
-
-<body>
-  <div class="form-main"></div>
-  <div class="form-div">
-    <form class="contact-form"></form>
-
-    <input type="text" style="width:98%"
-      id="first-name" placeholder="Digite seu nome"> </br></br>
-
-    <input type="text" style="width:98%"
-      id="last-name" placeholder="Digite seu sobrenome"></br></br>
-
-    <input type="text" style="width:98%"
-      id="email" placeholder="Digite seu e-mail "></br></br>
-
-    <input type="text" style="width:98%" id="phoneNumber" placeholder="Digite seu telefone"></br></br>
-
-    <textarea name="mensagem" id="mensagem" class="mensagem " cols="30" rows="10"
-      placeholder="Digite sua mensagem aqui"></textarea>
-    <div class="submit">
-      <input type="submit" value="ENVIAR" class="button-blue" />
+<body df>
+    <div class="form-div" df>
+        <form class="form" df>
+            <input type="text" placeholder="Seu Nome" class="input">
+            <input type="email" placeholder="Seu E-mail" class="input">
+            <textarea rows="5" placeholder="Sua Mensagem" class="input"></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
     </div>
-  </div>
-  </div>
-  </form>
 </body>
-
 </html>
